@@ -35,9 +35,6 @@ footer, header, hgroup, main, menu, nav, section {
 *[hidden] {
     display: none;
 }
-body {
-  line-height: 1;
-}
 menu, ol, ul {
   list-style: none;
 }
@@ -61,7 +58,7 @@ body {
   font-family: 'applesystem', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color:black;
   line-height: 1.2;
-  background: linear-gradient(135deg, #ee0099, #dd00ee);
+  background-color: #2f3640;
 }
 a {
   text-decoration:none;
@@ -69,9 +66,7 @@ a {
 }
 `;
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement,
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   <React.StrictMode>
