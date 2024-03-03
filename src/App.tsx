@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import VariantsOne from './components/VariantsOne';
 import VariantsTwo from './components/VariantsTwo';
+import GesturesOne from './components/GesturesOne';
+import GesturesTwo from './components/GesturesTwo';
 
 const Wrapper = styled.div`
   display: grid;
@@ -15,6 +17,8 @@ function App() {
     <Wrapper>
       <VariantsOne />
       <VariantsTwo />
+      <GesturesOne />
+      <GesturesTwo />
     </Wrapper>
   );
 }

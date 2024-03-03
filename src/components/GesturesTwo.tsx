@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #ee0099, #ff48d7);
+  background: linear-gradient(135deg, #7600e4, #5700e4);
 `;
 
 const Box = styled(motion.div)`
@@ -18,23 +18,14 @@ const Box = styled(motion.div)`
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
-const myVars = {
-  start: {
-    scale: 0,
-  },
-  end: {
-    scale: 1,
-    rotateZ: 360,
-    transition: {
-      type: 'spring',
-    },
-  },
+const boxVariants = {
+  drag: { backgroundColor: 'rgb(0, 206, 201)', transition: { duration: 1 } },
 };
 
-export default function VariantsOne() {
+export default function GesturesTwo() {
   return (
     <Wrapper>
-      <Box variants={myVars} initial="start" animate="end" />
+      <Box drag variants={boxVariants} whileDrag="drag" />
     </Wrapper>
   );
 }

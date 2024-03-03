@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #ee0099, #ff48d7);
+  background: linear-gradient(135deg, #be00ee, #7600e4);
 `;
 
 const Box = styled(motion.div)`
@@ -18,23 +18,15 @@ const Box = styled(motion.div)`
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
-const myVars = {
-  start: {
-    scale: 0,
-  },
-  end: {
-    scale: 1,
-    rotateZ: 360,
-    transition: {
-      type: 'spring',
-    },
-  },
+const boxVariants = {
+  hover: { scale: 1.25, rotate: 90 },
+  click: { scale: 1, rotate: 0, borderRadius: '100px' },
 };
 
-export default function VariantsOne() {
+export default function GesturesOne() {
   return (
     <Wrapper>
-      <Box variants={myVars} initial="start" animate="end" />
+      <Box variants={boxVariants} whileHover="hover" whileTap="click" />
     </Wrapper>
   );
 }

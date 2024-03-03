@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   border-radius: 15px;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #ee00da, #be00ee);
+  background: linear-gradient(135deg, #ee00da, #b600ee);
 `;
 
 const Box = styled(motion.div)`
